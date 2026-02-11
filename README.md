@@ -4,7 +4,7 @@
 <img src=resources/logo.svg width="15%"/>
 </div>
 <p align="center">
-    👋 Join our <a href="https://discord.gg/QR7SARHRxK" target="_blank">Discord</a> community.
+    👋 Join our<a href="resources/WECHAT.md" target="_blank"> Wechat</a> or <a href="https://discord.gg/QR7SARHRxK" target="_blank">Discord</a> community.
     <br>
     📖 Check out the GLM-5 <a href="https://z.ai/blog/glm-5" target="_blank">technical blog</a>.
     <br>
@@ -15,9 +15,9 @@
 
 ## Introduction
 
-We are launching GLM-5, targeting at complex systems engineering and long-horizon agentic tasks. Scaling is still one of the most important ways to improve intelligence efficiency of Artificial General Intelligence (AGI). Compared to GLM-4.5, GLM-5 scales from 355B parameters (32B active) to 744B parameters (40B active), and increases pre-training data from 23T to 28.5T tokens. GLM-5 also integrates DeepSeek Sparse Attention (DSA), largely reducing deployment cost while preserving long-context capacity.
+We are launching GLM-5, targeting complex systems engineering and long-horizon agentic tasks. Scaling is still one of the most important ways to improve the intelligence efficiency of Artificial General Intelligence (AGI). Compared to GLM-4.5, GLM-5 scales from 355B parameters (32B active) to 744B parameters (40B active), and increases pre-training data from 23T to 28.5T tokens. GLM-5 also integrates DeepSeek Sparse Attention (DSA), largely reducing deployment cost while preserving long-context capacity.
 
-Reinforcement learning aims to bridge the gap between competence and excellence in pre-trained models. However, deploying it at scale for LLM is a challenge, due to the RL training inefficiency. To this end, we developed [slime](https://github.com/THUDM/slime), a novel **asynchronous RL infrastructure** that substantially improves training throughput and efficiency, enabling more fine-grained post-training iterations. With advances in both pre-training and post-training, GLM-5 delivers significant compared to our prior version GLM-4.7 across a wide range of academic benchmarks and achieves best-in-class performance among all open-source models in the world on reasoning, coding, and agentic tasks, and closing the gap with frontier models.
+Reinforcement learning aims to bridge the gap between competence and excellence in pre-trained models. However, deploying it at scale for LLMs is a challenge due to the RL training inefficiency. To this end, we developed [slime](https://github.com/THUDM/slime), a novel **asynchronous RL infrastructure** that substantially improves training throughput and efficiency, enabling more fine-grained post-training iterations. With advances in both pre-training and post-training, GLM-5 delivers significant improvement compared to GLM-4.7 across a wide range of academic benchmarks and achieves best-in-class performance among all open-source models in the world on reasoning, coding, and agentic tasks,  closing the gap with frontier models.
 
 ![bench](resources/bench.png)
 
@@ -104,6 +104,8 @@ vLLM, SGLang, and xLLM all support local deployment of GLM-5. A simple deploymen
       --mem-fraction-static 0.85 \
       --served-model-name glm-5-fp8
     ```
+  
+    Check the [sglang cookbook](https://cookbook.sglang.io/autoregressive/GLM/GLM-5) for more details.
 
 + xLLM and other Ascend NPU
 
